@@ -1,6 +1,6 @@
-# Camerasim Package
+# ROS-Camerasim
 
-Camerasim is a ROS package that simulates a camera with Gazebo.
+Camerasim is a ROS package that simulates a camera with Gazebo. This package is written under ROS-Noetic distro.
 Here you can simulate the algorithm of image processing, Computer Vision and so on.
 
 How to use:
