@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>camerasim</name>
+  <version>1.0.0</version>
+  <description>
+  The camerasim package does a camera simulation with 
+  Gazebo and ROS. 
+  </description>
+
+  <maintainer email="diona4.10@gmail.com">dion</maintainer>
+  <license>TODO</license>
+
+  <!-- <url type="website">http://github.com/dionstew/camerasim</url> -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_export_depend>cv_bridge</build_export_depend>
+  <build_export_depend>gazebo_ros</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+  </export>
+</package>

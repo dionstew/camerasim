@@ -1,0 +1,10 @@
+<launch>	  
+	<rosparam file="$(find camerasim)/config/global_config.yaml" command="load" />
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+    	<arg name="world_name" value="$(find camerasim)/worlds/camerasim.world"/>
+    	<arg name="verbose" 	value="true"/>
+    	<arg name="paused"		value="false"/>
+  	</include>
+
+	<node name="model_up" pkg="camerasim" type="model_up.sh"/>
+</launch>
