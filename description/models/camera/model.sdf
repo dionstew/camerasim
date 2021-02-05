@@ -56,7 +56,7 @@
         <plugin name="camera" filename="libgazebo_ros_camera.so">
           <alwaysOn>1</alwaysOn>
           <updateRate>30</updateRate>
-          <cameraName>/camera</cameraName>
+          <cameraName>camera</cameraName>
           <imageTopicName>image_raw</imageTopicName>
           <cameraInfoTopicName>camera_info</cameraInfoTopicName>
           <frameName>camera_frame</frameName>

@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   gazebo_ros
   roscpp
   rospy
+  sensor_msgs
 )
 
 
@@ -70,10 +71,11 @@ find_package(gazebo REQUIRED)
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  std_msgs  # Or other packages containing msgs
+  sensor_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -107,8 +109,8 @@ find_package(gazebo REQUIRED)
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES camerasim
-#  CATKIN_DEPENDS cv_bridge gazebo_ros roscpp rospy
-#  DEPENDS system_lib
+  CATKIN_DEPENDS cv_bridge gazebo_ros roscpp rospy sensor_msgs
+  DEPENDS system_lib 
 )
 
 ###########
